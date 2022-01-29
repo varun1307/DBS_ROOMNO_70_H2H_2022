@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONFIGURE RISK RATINGS</h1>
+    
+        <div class="risk">
+            <h2 style="color: red">High Risk Rules</h2>
+            <div class="rules">
+                <div class="condition">
+                    <label for="high1">
+                        More than 
+                        <input type="text" placeholder="Enter the number of transactions">
+                         incoming or outgoing (INN | OUT) transaction in a month from high risk country.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="high2">
+                        If sum of all incoming(INN) transactions is more than 
+                        <input type="text" placeholder="Enter the sum">
+                        $ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="high3">
+                        If sum of all outgoing(OUT) transactions is more than 
+                        <input type="text" placeholder="Enter the sum">
+                        $ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="high4">
+                        If number of transactions in a day is more than
+                        <input type="text" placeholder="Enter the transactions count">.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="risk">
+            <h2 style="color:blue">Medium Risk Rules</h2>
+            <div class="rules">
+                <div class="condition">
+                    <label for="medium1">
+                        More than 
+                        <input type="text" placeholder="Enter the number of transactions">
+                        incoming or outgoing (INN | OUT) transaction in a month from high risk/ non-high country.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="medium2">
+                        If sum of all incoming(INN) transactions is more than 
+                        <input type="text" placeholder="Enter the sum">$ and less than 
+                        <input type="text" placeholder="Enter the sum">$ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="medium3">
+                        If sum of all outgoing(OUT) transactions is more than 
+                        <input type="text" placeholder="Enter the sum">$ and less than 
+                        <input type="text" placeholder="Enter the sum">$ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="medium4">
+                        If number of transactions in a day is more than
+                        <input type="text" placeholder="Enter the transactions count"> but less than
+                        <input type="text" placeholder="Enter the transactions count">
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="risk">
+            <h2 style="color:yellow">Low Risk Rules</h2>
+            <div class="rules">
+                <div class="condition">
+                    <label for="low1">
+                        Less than 
+                        <input type="text" placeholder="Enter the number of transactions">
+                         incoming or outgoing (INN | OUT) transaction in a month from non-high-risk country.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="low2">
+                        If sum of all incoming(INN) transactions is less than 
+                        <input type="text" placeholder="Enter the sum">
+                        $ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="low3">
+                        If sum of all outgoing(OUT) transactions is less than 
+                        <input type="text" placeholder="Enter the sum">
+                        $ in a month.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rules">
+                <div class="condition">
+                    <label for="low4">
+                        If number of incoming transaction in a day is less than
+                        <input type="text" placeholder="Enter the transactions count">.
+                    </label>
+                </div>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Apply changes">
+        </div>
+    </div>
+</body>
+</html>
